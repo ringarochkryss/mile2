@@ -1,0 +1,377 @@
+﻿/*Turkos: 9bd4cb
+light Turkos: dcefed
+Militärgrön: 7d927a
+Ljusblå: 7cbbdb
+Mörkare turkos: 00b0b0
+Gråblå: 7a8da2
+Blå: 1f88c4
+gul: 9bd4cb
+Red: ff3300
+
+font-family: 'Cinzel', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.jumbostyle {
+    background-color: #dcefed;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.jumboright {
+    min-height: 100vh;
+}
+
+
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: white;
+    background-color: white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(155,212,203,0.9) 0px 3px 3px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    background-color: darkgray;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.4) 0px 3px 3px;
+}
+
+.lead {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.lead2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00b0b0;
+
+}
+
+.lead3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.lead4 {
+    font-family: 'Cinzel', serif;
+    color: white;
+    background-color: darkgray;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.4) 0px 3px 3px;
+}
+
+.heightcheckdiv {
+    z-index: 10;
+}
+
+#sigma {
+    height: 230px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #dcefed;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 300px;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 500px;
+}
+
+
+.poolcolor {
+    background-color: #9bd4cb;
+}
+
+.poolcolorlight {
+    background-color: #dcefed;
+}
+
+.poolcolordeep1 {
+    color: #00b0b0;
+}
+
+
+
+
+
+/*button Level 1*/
+
+.btnl1 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #7cbbdb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #7cbbdb;
+    margin: 5px;
+    text: center;
+    justify-content: center;
+    align-items: center;
+    transition:0.5s;
+}
+
+    .btnl1:hover {
+        background: white;
+        color: #7cbbdb;
+        border: 5px solid #7cbbdb;
+    }
+
+.btnl2 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #1f88c4;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #1f88c4;
+    text: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .btnl2:hover {
+        background: white;
+        color: #1f88c4;
+        border: 5px solid #1f88c4;
+    }
+
+.btnl3 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #00b0b0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #00b0b0;
+    text: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .btnl3:hover {
+        background: white;
+        color: #00b0b0;
+        border: 5px solid #00b0b0;
+    }
+
+
+/*modal showing dives*/
+
+.showdives {
+    background: #9bd4cb;
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+    color: white;
+}
+
+
+
+.divedescription {
+    font-size: 2em;
+}
+
+.Hide {
+    display: none;
+}
+
+
+
+
+/* Search with style àla DarkCode */
+
+.search-box {
+    position: absolute;
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+}
+
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #2f3640;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn {
+    color: #9bd4cb;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00b0b0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-box:hover > .search-btn {
+    background: #2f3640;
+}
+
+/*jsonsearch*/
+
+#result {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 400px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.link-class:hover {
+    background-color: #f1f1f1;
+}
+
+
+/*the maps*/
+
+
+.circle:hover {
+    stroke: white;
+    stroke-width: 3px;
+}
+
+
+/*cloud found it on developer.mozilla.org*/
+.fancy {
+    text-align: center;
+    /*  make circles */
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    padding: 50px 0 0 0;
+    /* make room for the "ears" of our cloud */
+    margin: 1 100px;
+    position: relative;
+    background-color: #dcefed;
+    /* flat in the bottom but round on top ;) */
+    border-radius: 100% 100% 0 0;
+}
+
+    /* Those are common style that apply to both our ::before
+   and ::after pseudo elements. */
+    .fancy::before,
+    .fancy::after {
+        /* This is required to be allowed to display the
+     pseudo-elements, event if the value is an empty
+     string */
+        content: '';
+        /* We positionnate our pseudo-elements on the left and
+     right sides of the box, but always at the bottom */
+        position: absolute;
+        bottom: 0;
+        /* This makes sure our pseudo-elements will be below
+     the box content whatever happens. */
+        z-index: -1;
+        background-color: #dcefed;
+        border-radius: 100%;
+    }
+
+    .fancy::before {
+        /* This is the  size of the clouds left ear */
+        width: 125px;
+        height: 125px;
+        /* We sligthly move it to the left */
+        left: -80px;
+        /* To make sure that the bottom of the cloud
+     remains flat, we must make the bottom right
+     corner of the left ear square. */
+        border-bottom-right-radius: 0;
+    }
+
+    .fancy::after {
+        /* This is the size of the clouds left ear */
+        width: 100px;
+        height: 100px;
+        /* We sligthly move it to the right */
+        right: -60px;
+        /* To make sure that the bottom of the cloud
+     remains flat, we must make the bottom left
+     corner of the right ear square. */
+        border-bottom-left-radius: 0;
+    }
+
+
+/*weather map*/
+
+.leaflet-control-attribution {
+    display:none;
+}
+
+.legend {
+    line-height: 20px;
+    color: #555;
+    font: 'Montserrat', sans-serif;
+}
+
+    .legend i {
+        width: 16px;
+        height: 18px;
+        float: left;
+        margin-right: 5px;
+        opacity: 0.7;
+    }
+#map1 {
+    height: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #dcefed;
+}
